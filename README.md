@@ -1,6 +1,13 @@
 Inkscape. Draw Freely.
 ======================
 
+
+This is a "fork" from the Inkscape GitLab repo, made to log pen tilt and pressure from graphics tablets for use with a pen plotter.
+
+Inkscape extensions are limited to what they are able to access, so for now I'm creating my own build (copied and distributed fairly under Inkscapes licensing).
+
+
+
 [https://inkscape.org/](https://inkscape.org/)
 
 Inkscape is a Free and open source vector graphics editor. It offers a rich set
