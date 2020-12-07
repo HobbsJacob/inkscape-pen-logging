@@ -65,6 +65,7 @@ using Inkscape::Util::Quantity;
 using Inkscape::Util::Unit;
 using Inkscape::Util::unit_table;
 
+
 #define DDC_RED_RGBA 0xff0000ff
 
 #define TOLERANCE_CALLIGRAPHIC 0.1
@@ -258,6 +259,9 @@ bool CalligraphicTool::apply(Geom::Point p) {
 
     double a1;
     if (this->usetilt) {
+        std::cout << "x tilt: " + std::to_string(this->xtilt) + "\n";
+        std::cout << "y tilt: " + std::to_string(this->ytilt) + "\n";
+        std::cout << "pressure: " + std::to_string(this->pressure) + "\n";
         // 1a. calculate nib angle from input device tilt:
         if (this->xtilt == 0 && this->ytilt == 0) {
             // to be sure that atan2 in the computation below
